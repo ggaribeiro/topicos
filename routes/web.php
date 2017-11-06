@@ -19,7 +19,7 @@ Route::get('sobre', function () {
     return view('sobre');
 });
 
-Route::get('users', 'usersController@getUsers');
+Route::get('usuarios', 'usersController@getUsers');
 //    return view('usuarios')->
 //                    with('user_id', $user_id);
 
