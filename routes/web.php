@@ -19,9 +19,8 @@ Route::get('sobre', function () {
     return view('sobre');
 });
 
-Route::get('usuarios/{user_id?}', function ($user_id = null) {
-    return view('usuarios')->
-                    with('user_id', $user_id);
-});
+Route::get('users', 'usersController@getUsers');
+//    return view('usuarios')->
+//                    with('user_id', $user_id);
 
 
